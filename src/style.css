@@ -17,10 +17,10 @@ h1 {
     position: relative;
     font-size: 6rem;
     letter-spacing: 15px;
+    text-align: center;
     color: #0e3742;
     text-transform: uppercase;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
-    line-height: 0.70rem;
     outline: none;
     animation: animate 5s linear infinite;
 }
@@ -36,7 +36,26 @@ h1 {
     }
 }
 
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
 
-span {
-    color: red;
+@media screen and (max-width: 426px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    h1 {
+        font-size: 1rem;
+    }
 }
